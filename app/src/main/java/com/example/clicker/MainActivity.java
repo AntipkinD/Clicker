@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
     }
-    public void onClickBtnAddVodka(View view) {
+    public void onClickBtnAddNothing(View view) {
         counter++;
         TextView counterView = findViewById(R.id.txt_counter);
         counterView.setText(counter.toString());
@@ -53,5 +53,4 @@ public class MainActivity extends Activity {
     public void onDestroy(){
         super.onDestroy();
     }
-
 }
