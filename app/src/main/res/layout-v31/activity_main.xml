@@ -16,7 +16,7 @@
         android:layout_y="231dp"
         android:gravity="center"
         android:text="0"
-        android:textColor="#376C60"
+        android:textColor="@android:color/system_accent3_700"
         android:textSize="@dimen/sizelool" />
 
     <ImageView
@@ -42,7 +42,7 @@
         android:layout_height="74dp"
         android:layout_x="90dp"
         android:layout_y="343dp"
-        android:backgroundTint="#01302B"
+        android:backgroundTint="@android:color/system_accent2_700"
         android:onClick="onClickBtnAddNothing"
         android:text="Добавить ничего"
         android:textColor="@android:color/secondary_text_light_nodisable" />
