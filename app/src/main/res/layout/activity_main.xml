@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,39 +12,49 @@
         android:id="@+id/txt_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
         android:layout_x="185dp"
         android:layout_y="231dp"
         android:gravity="center"
         android:text="0"
         android:textColor="#376C60"
-        android:textSize="@dimen/sizelool" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="-100dp"
-        android:layout_toStartOf="@+id/txt_counter"
-        android:layout_x="148dp"
-        android:layout_y="215dp"
-        app:srcCompat="@drawable/ground" />
+        android:textSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="173dp"
         android:layout_y="323dp"
         android:text="НИЧЕГО"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="230dp"
         android:layout_height="74dp"
+        android:layout_marginTop="30dp"
         android:layout_x="90dp"
         android:layout_y="343dp"
         android:backgroundTint="#01302B"
         android:onClick="onClickBtnAddNothing"
         android:text="Добавить ничего"
-        android:textColor="@android:color/secondary_text_light_nodisable" />
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-</AbsoluteLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
